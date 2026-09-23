@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SplashActivity theme for API < 31.
+         windowBackground shows dark screen instantly so there's no white flash. -->
+    <style name="Theme.BimmerReader.Splash" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/ic_launcher_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

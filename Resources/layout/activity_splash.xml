@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#0D0D1A">
+
+    <!-- Logo mark -->
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/ic_bimmerreader_logo"
+        android:layout_marginBottom="28dp"/>
+
+    <!-- BIMMER (white) + LOGS (orange) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BIMMER"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGS"
+            android:textColor="#E87C2C"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12"/>
+    </LinearLayout>
+
+    <!-- Tagline -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMW Log Visualizer"
+        android:textColor="#44557A"
+        android:textSize="14sp"
+        android:letterSpacing="0.08"/>
+
+    <!-- Subtle loading dot at bottom -->
+    <ProgressBar
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="64dp"
+        android:indeterminateTint="#1C69D4"/>
+
+</LinearLayout>

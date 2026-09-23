@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#0D0D1A"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="28dp"
+    android:paddingBottom="24dp">
+
+    <!-- Logo mark -->
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/ic_bimmerreader_logo"
+        android:layout_marginBottom="14dp"/>
+
+    <!-- Two-tone title -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BIMMER"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGS"
+            android:textColor="#E87C2C"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.10"/>
+    </LinearLayout>
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/tv_about_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a BimmerLink Logs reader, designed specifically to read the logs that BimmerLink produces. I have no relation whatsoever with BimmerLink — enjoy!\n\nAny questions or suggestions:\ngafrancisco@gmail.com\n\n— Gilberto Francisco"
+        android:textColor="#99AABB"
+        android:textSize="13sp"
+        android:lineSpacingMultiplier="1.4"
+        android:gravity="center"/>
+
+</LinearLayout>

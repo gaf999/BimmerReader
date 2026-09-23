@@ -1,0 +1,13 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# Local sample data logs
+logs/

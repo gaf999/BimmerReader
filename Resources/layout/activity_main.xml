@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D0D1A">
+
+    <!-- Header: two-tone title + 3-dot menu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:background="#111128">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BIMMER"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.10"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LOGS"
+            android:textColor="#E87C2C"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.10"/>
+
+        <!-- 3-dot overflow menu -->
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@android:color/transparent"
+            android:textColor="#AABBDD"
+            android:textSize="20sp"
+            android:padding="0dp"/>
+    </LinearLayout>
+
+    <!-- Load screen -->
+    <LinearLayout
+        android:id="@+id/panel_load"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_bimmerreader_logo"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BIMMER"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGS"
+                android:textColor="#E87C2C"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMW Log Visualizer"
+            android:textSize="13sp"
+            android:textColor="#44557A"
+            android:layout_marginBottom="52dp"/>
+
+        <Button
+            android:id="@+id/btn_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOAD CSV LOG"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#1C69D4"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="14dp"/>
+    </LinearLayout>
+
+    <!-- Gauge grid -->
+    <ScrollView
+        android:id="@+id/scroll_gauges"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:background="#0D0D1A">
+
+        <LinearLayout
+            android:id="@+id/gauge_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="6dp"/>
+    </ScrollView>
+
+    <!-- Values list -->
+    <ScrollView
+        android:id="@+id/scroll_values"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:background="#0D0D1A">
+
+        <LinearLayout
+            android:id="@+id/values_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"/>
+    </ScrollView>
+
+    <!-- Playback bar -->
+    <LinearLayout
+        android:id="@+id/panel_playback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#111128"
+        android:visibility="gone"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:elevation="8dp">
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressTint="#1C69D4"
+            android:thumbTint="#4DA6FF"
+            android:layout_marginBottom="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0.0s / 0.0s"
+                android:textColor="#667799"
+                android:textSize="11sp"/>
+
+            <Button
+                android:id="@+id/btn_open"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:textColor="#667799"
+                android:textSize="18sp"
+                android:padding="0dp"/>
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:textColor="#AABBDD"
+                android:textSize="18sp"
+                android:padding="0dp"/>
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="52dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:textColor="#4DA6FF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:padding="0dp"/>
+
+            <Button
+                android:id="@+id/btn_speed"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:textColor="#AABBDD"
+                android:textSize="13sp"
+                android:padding="0dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

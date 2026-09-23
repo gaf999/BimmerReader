@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    BimmerReader logo — original design.
+    White vertical bar + blue upper arc lobe + orange lower arc lobe (larger).
+    Intentionally orange (not red) and with gauge-inspired rounded proportions
+    to distinguish from any third-party marks.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- White vertical spine -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 14,10 H 30 V 90 H 14 Z"/>
+
+    <!-- Upper lobe — BMW blue -->
+    <path
+        android:fillColor="#1C69D4"
+        android:pathData="M 30,10 Q 80,10 80,32 Q 80,54 30,54 Z"/>
+
+    <!-- Lower lobe — orange, slightly wider for clear separation -->
+    <path
+        android:fillColor="#E87C2C"
+        android:pathData="M 30,56 Q 86,56 86,73 Q 86,90 30,90 Z"/>
+
+</vector>

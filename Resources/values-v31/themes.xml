@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Android 12+ (API 31): system splash screen is automatic.
+         These attributes style it with our logo + dark background so it
+         matches the custom splash, then SplashActivity skips its own UI
+         and goes straight to MainActivity — no double splash. -->
+    <style name="Theme.BimmerReader.Splash" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowSplashScreenBackground">@color/ic_launcher_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_bimmerreader_logo</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/ic_launcher_background</item>
+        <item name="android:windowBackground">@color/ic_launcher_background</item>
+    </style>
+</resources>

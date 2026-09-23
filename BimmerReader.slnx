@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="BimmerReader.csproj">
+    <Deploy />
+  </Project>
+</Solution>
